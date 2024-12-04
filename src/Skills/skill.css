@@ -1,0 +1,96 @@
+.skillsss {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 2px;
+    color: white;
+}
+
+.linee {
+    border-top: 2px solid #544f4f;
+}
+
+.frontend, .backend {
+    flex: 1;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    gap: 1.5rem; 
+    border: rgb(208, 188, 188) 0.1rem solid;
+    border-radius: 2rem;
+    padding: 20px;
+    background-color: #343232;
+    box-sizing: border-box;
+    min-height: 300px; 
+    max-width: 45%;
+}
+
+.frontback {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+.frontend div, .backend div {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    width: 100%;
+    text-align: left;
+}
+
+.frontend div h3, .backend div h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: yellow;
+}
+
+.frontend div p, .backend div p {
+    font-size: 1rem;
+    color: #f7f3f3;
+    margin: 0;
+}
+
+
+.midd {
+    color: #e91e63;
+}
+
+
+@media (max-width: 768px) {
+    .frontback {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .frontend, .backend {
+        max-width: 100%; 
+        min-height: auto; 
+        padding: 15px;
+    }
+
+    .frontend div, .backend div {
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    .frontend div h3, .backend div h3 {
+        font-size: 1.1rem; 
+    }
+
+    .frontend div p, .backend div p {
+        font-size: 0.9rem; 
+    }
+
+    .linee {
+        margin: 10px 0; 
+    }
+}

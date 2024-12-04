@@ -1,0 +1,149 @@
+/* Base Styles */
+.Edu {
+    width: 80%;
+    margin: 60px auto;
+    padding: 0 20px;
+    color: white;
+}
+
+h1::after {
+    content: '';
+    display: block;
+}
+
+.detailes {
+    border-top: 2px solid #6d6565;
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+.educationsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headinggg {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 30px;
+}
+
+.educationde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.educationitem,
+.educationitem2,
+.educationitem3 {
+    background-color: #333;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.educationde::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #6d6565;
+    z-index: 1;
+}
+
+.educationitem,
+.educationitem2,
+.educationitem3 {
+    z-index: 2;
+}
+
+/* Text Styling */
+.educationitem h2,
+.educationitem2 h2,
+.educationitem3 h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.educationitem p,
+.educationitem2 p,
+.educationitem3 p {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    .Edu {
+        width: 90%;
+        margin: 40px auto;
+        padding: 0 10px;
+    }
+
+    .headinggg {
+        font-size: 1rem; /* Adjust heading size */
+        margin-bottom: 20px;
+    }
+
+    .educationitem,
+    .educationitem2,
+    .educationitem3 {
+        width: 90%; /* Make items take up more space on small screens */
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .educationitem h2,
+    .educationitem2 h2,
+    .educationitem3 h2 {
+        font-size: 1rem; /* Reduce heading size */
+        margin: 8px 0;
+    }
+
+    .educationitem p,
+    .educationitem2 p,
+    .educationitem3 p {
+        font-size: 0.8rem; /* Reduce paragraph size */
+    }
+
+    .educationde::before {
+        width: 2px; /* Make the vertical line thinner */
+    }
+}
+
+@media (max-width: 480px) {
+    .Edu {
+        margin: 30px auto;
+        padding: 0 5px;
+    }
+
+    .headinggg {
+        font-size: 0.9rem; 
+    }
+
+    .educationitem,
+    .educationitem2,
+    .educationitem3 {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .educationitem h2,
+    .educationitem2 h2,
+    .educationitem3 h2 {
+        font-size: 0.9rem; 
+    }
+
+    .educationitem p,
+    .educationitem2 p,
+    .educationitem3 p {
+        font-size: 0.75rem; 
+    }
+}

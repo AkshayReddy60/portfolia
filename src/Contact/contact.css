@@ -1,0 +1,93 @@
+.contacttt {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.afterl {
+    border-bottom: 2px solid #444;
+    margin: 10px auto;
+    width: 50%; /* Adjust line width for aesthetic proportions */
+}
+
+.contactla {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.conatactfrom {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.name,
+.email,
+.textare {
+    width: 100%; /* Full width for mobile screens */
+    max-width: 500px; /* Restrict maximum width for larger screens */
+    background-color: #444;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Clean input look */
+    outline: none; /* Prevent default focus border */
+    box-sizing: border-box;
+}
+
+.textare {
+    height: auto;
+    min-height: 100px;
+    resize: vertical; /* Allow users to adjust the textarea size */
+}
+
+.btnsub {
+    border-radius: 10px;
+    padding: 0.75rem 2.5rem;
+    background-color: #e91e63;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnsub:hover {
+    background-color: #c2185b;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .contacttt {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .afterl {
+        width: 70%; /* Narrow the line for smaller screens */
+    }
+
+    .name,
+    .email,
+    .textare {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .btnsub {
+        font-size: 14px;
+        padding: 0.75rem 2rem;
+    }
+
+    .conatactfrom {
+        gap: 15px; /* Reduce gap between form elements */
+    }
+}
